@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.song.mytest.MainActivity">
+
+    <com.example.song.mytest.MarqueeView
+        android:id="@+id/marqueeView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mvAnimDuration="1000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:mvDirection="bottom_to_top"
+        app:mvInterval="3000"
+        app:mvSingleLine="true"
+        app:mvTextColor="#f0f"
+        app:mvTextSize="30sp" />
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <com.example.song.mytest.MarqueeView
+            android:id="@+id/marqueeView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:mvAnimDuration="1000"
+            app:mvDirection="bottom_to_top"
+            app:mvInterval="4000"
+            app:mvSingleLine="true"
+            app:mvTextColor="#f0f"
+            app:mvTextSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <com.example.song.mytest.MarqueeView
+            android:id="@+id/marqueeView3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:mvAnimDuration="1000"
+            app:mvDirection="bottom_to_top"
+            app:mvInterval="3000"
+            app:mvSingleLine="true"
+            app:mvTextColor="#00f"
+            app:mvTextSize="20sp" />
+    </RelativeLayout>
+<TextView
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+</LinearLayout>
