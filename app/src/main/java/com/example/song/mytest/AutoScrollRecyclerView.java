@@ -70,7 +70,6 @@ public class AutoScrollRecyclerView extends RecyclerView {
             mAutoTask = null;
         }
     }
-    long pauseTime=0;
     boolean isRun;
     //跑马灯滚动 开始
     public void startAuto() {
